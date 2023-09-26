@@ -1,26 +1,16 @@
 {
   "name": "HTML to TXT Converter Bot",
   "description": "Telegram bot that converts HTML files to TXT files.",
-  "keywords": ["telegram", "bot", "python", "html", "txt", "converter"],
-  "website": "https://github.com/Sksir9632/repo",
+  "keywords": ["telegram", "bot", "html", "txt", "converter"],
+  "website": "https://github.com/username/repo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rajveer/repo.git"
+    "url": "https://github.com/username/repo.git"
   },
   "env": {
-    "PYTHON_VERSION": "3.9.7",
     "API_ID": "YOUR_API_ID",
     "API_HASH": "YOUR_API_HASH",
     "BOT_TOKEN": "YOUR_BOT_TOKEN",
     "USER_ID": "YOUR_USER_ID"
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql:hobby-dev",
-      "as": "DATABASE",
-      "options": {
-        "version": "13"
-      }
-    }
-  ]
+  }
 }
