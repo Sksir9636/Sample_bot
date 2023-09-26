@@ -1,29 +1,20 @@
 {
   "name": "html-to-txt-bot",
   "description": "A Telegram bot that converts HTML files to TXT",
-  "keywords": ["telegram", "bot", "html", "txt", "converter"],
-  "env": {
-    "TELEGRAM_TOKEN": {
-      "description": "Telegram API token",
-      "required": true
-    },
-    "BOT_USERNAME": {
-      "description": "The username of your bot",
-      "required": true
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
     }
+  ],
+  "env": {
+    "TELEGRAM_API_ID": "<insert API ID here>",
+    "TELEGRAM_API_HASH": "<insert API hash here>",
+    "TELEGRAM_BOT_TOKEN": "<insert bot token here>"
   },
   "scripts": {
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/your-username/html-to-txt-bot.git"
-  },
-  "dependencies": {
-    "telegraf": "^4.4.2",
-    "cheerio": "^1.0.0-rc.3"
-  },
-  "engines": {
-    "node": ">=10.0.0"
+    "start": "python bot.py"
   }
 }
